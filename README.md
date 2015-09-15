@@ -5,6 +5,7 @@
 | Kürzel | Stadt |
 |:------:|:-----:|
 | ffal | Altena |
+| ffdill | Dillenburg |
 | fffb | Freudenberg |
 | ffgm | Gummersbach |
 | ffhb | Hilchenbach |
@@ -15,9 +16,11 @@
 | ffki | Kierspe |
 | ffls | Lüdenscheid |
 | ffmd | Menden |
-| ffmz | Meinerzhagen | 
+| ffmh | Marienheide |
+| ffmz | Meinerzhagen |
 | ffnr | Neuenrade |
-| ffpl | Plettenberg | 
+| ffpl | Plettenberg |
 | ffsi | Siegen |
 | ffsm | Schmallenberg |
 | ffwd | Werdohl |
+| ffww | Westerwald |
