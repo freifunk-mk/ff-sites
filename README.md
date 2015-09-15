@@ -7,6 +7,7 @@
 | ffal | Altena |
 | ffdill | Dillenburg |
 | fffb | Freudenberg |
+| ffgi | Gießen |
 | ffgm | Gummersbach |
 | ffhb | Hilchenbach |
 | ffhe | Hemer |
