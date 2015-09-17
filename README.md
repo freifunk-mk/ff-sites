@@ -22,6 +22,6 @@
 | ffnr | Neuenrade |
 | ffpl | Plettenberg |
 | ffsi | Siegen |
-| ffsm | Schmallenberg |
+| ffsm | Schalksmühle |
 | ffwd | Werdohl |
 | ffww | Westerwald |
