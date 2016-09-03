@@ -25,7 +25,7 @@ GLUON_SITE_PACKAGES := \
         iptables \
         haveged
 
-DEFAULT_GLUON_RELEASE := 15.07.1
+DEFAULT_GLUON_RELEASE := 16.1.3
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
