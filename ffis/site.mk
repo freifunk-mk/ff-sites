@@ -1,6 +1,7 @@
 GLUON_SITE_PACKAGES := \
         gluon-mesh-batman-adv-15 \
         gluon-alfred \
+				gluon-respondd \
         gluon-autoupdater \
         gluon-setup-mode \
         gluon-config-mode-core \
@@ -19,22 +20,16 @@ GLUON_SITE_PACKAGES := \
         gluon-next-node \
         gluon-mesh-vpn-fastd \
         gluon-radvd \
-	gluon-respondd \
         gluon-status-page \
         iwinfo \
         iptables \
         haveged
 
-DEFAULT_GLUON_RELEASE := 16.1.3
+DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 GLUON_PRIORITY ?= 0
-GLUON_BRANCH ?= stable
-export GLUON_BRANCH
 
-GLUON_TARGET ?= ar71xx-generic
-export GLUON_TARGET
-
-GLUON_LANGS ?= de
+GLUON_LANGS ?= en de
