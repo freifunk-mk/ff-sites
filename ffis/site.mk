@@ -1,7 +1,6 @@
 GLUON_SITE_PACKAGES := \
         gluon-mesh-batman-adv-15 \
         gluon-alfred \
-        gluon-announced \
         gluon-autoupdater \
         gluon-setup-mode \
         gluon-config-mode-core \
@@ -20,6 +19,7 @@ GLUON_SITE_PACKAGES := \
         gluon-next-node \
         gluon-mesh-vpn-fastd \
         gluon-radvd \
+	gluon-respondd \
         gluon-status-page \
         iwinfo \
         iptables \
