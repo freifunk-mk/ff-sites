@@ -5,7 +5,6 @@
 | Kürzel | Stadt |
 |:------:|:-----:|
 | ffal | Altena |
-| ffgm | Gummersbach |
 | ffhe | Hemer |
 | ffhs | Herscheid |
 | ffhv | Halver |
