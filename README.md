@@ -11,7 +11,6 @@
 | ffis | Iserlohn |
 | ffls | Lüdenscheid |
 | ffmd | Menden |
-| ffmh | Marienheide |
 | ffmz | Meinerzhagen |
 | ffnr | Neuenrade |
 | ffpl | Plettenberg |
