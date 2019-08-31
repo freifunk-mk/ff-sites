@@ -32,14 +32,14 @@ msgstr ""
 
 msgid "gluon-config-mode:novpn"
 msgstr ""
-"Das ist der Schl&uuml;ssel deines Freifunkknotens zur Information. "
+"Das ist der Schlüssel deines Freifunkknotens zur Information. "
 "Der Knoten ist nun direkt nutzbar."
 
 msgid "gluon-config-mode:reboot"
 msgstr ""
 "<p>Dein Knoten startet gerade neu und wird anschließend versuchen, "
 "sich mit anderen Freifunkknoten in seiner Nähe zu "
-"verbinden. Weitere Informationen &uuml;ber Fichtenfunk findest du auf "
+"verbinden. Weitere Informationen über Fichtenfunk findest du auf "
 "<a href=\"http://www.freifunk-mk.de/\">unserer Webseite</a>.</p>"
 "<p>Viel Spaß mit deinem Knoten und der Erkundung von Freifunk!</p>"
 
