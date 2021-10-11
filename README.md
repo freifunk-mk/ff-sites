@@ -6,13 +6,9 @@
 |:------:|:-----:|
 | ffal | Altena |
 | ffhe | Hemer |
-| ffhs | Herscheid |
-| ffhv | Halver |
 | ffis | Iserlohn |
 | ffls | Lüdenscheid |
-| ffmd | Menden |
 | ffmz | Meinerzhagen |
+| ffmk | MK |
 | ffnr | Neuenrade |
-| ffpl | Plettenberg |
-| ffsm | Schalksmühle |
-| ffwd | Werdohl |
+
