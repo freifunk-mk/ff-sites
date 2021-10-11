@@ -36,7 +36,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-banner \
 	gluon-linkcheck \
 	gluon-config-mode-geo-location-osm \
-#	gluon-authorized-keys \
+	gluon-authorized-keys \
 
 
 # openwrt:
