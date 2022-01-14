@@ -54,3 +54,6 @@ GLUON_REGION ?= eu
 
 # Languages to include
 GLUON_LANGS ?= en de
+
+# activate generation of ath10k-targets
+GLUON_ATH10K_MESH = ibss
