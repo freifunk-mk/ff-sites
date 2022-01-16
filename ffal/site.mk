@@ -44,7 +44,7 @@ DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 #		would generate images named like this:
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
-GLUON_RELEASE ?= 21.12.2
+GLUON_RELEASE ?= 22.01
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
