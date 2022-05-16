@@ -1,0 +1,4 @@
+GLUON_SITE_FEEDS='ffmk'
+
+PACKAGES_FFMK_REPO=https://github.com/freifunk-mk/gluon-packages.git
+PACKAGES_FFMK_COMMIT=10281cc2e41c6675f1ae2cc15d0859157ece7a07

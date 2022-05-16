@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2021-01-17 20:28+0100\n"
+"Last-Translator: Rafael Grothmann <freifunk@rafaelgrothmann.de>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "gluon-config-mode:welcome"
+msgstr ""
+"Willkommen zum Einrichtungsassistenten für deinen neuen Freifunk-MK "
+"Router. Fülle das folgende Formular deinen Vorstellungen "
+"entsprechend aus und sende es ab."
+
+msgid "gluon-config-mode:domain"
+msgstr "Domäne"
+
+msgid "gluon-config-mode:domain-select"
+msgstr ""
+"Hier hast du die Möglichkeit, die Mesh-Domäne, in der sich dein Router "
+"befindet, auszuwählen. Schau bitte auf der Homepage nach, in welcher Domäne " 
+"du dich befindest. Bitte denke daran, dass sich dein Router nur mit den "
+"Routern der ausgewählten Domäne verbinden kann."
+
+msgid "gluon-config-mode:pubkey"
+msgstr ""
+"<p>Dein Router startet gerade neu und wird anschließend versuchen, sich mit "
+"anderen Freifunk-MK Routern in seiner Nähe über WLAN sowie über deine "
+"Internetverbindung über das VPN-Gateway zu verbinden.</p>"
+
+msgid "gluon-config-mode:novpn"
+msgstr ""
+"<p><strong>Du hast ausgewählt die Internetverbindung (Mesh-VPN) nicht zu "
+"nutzen</strong>. Dein Router kann also nur dann eine Verbindung zum "
+"Freifunk-Netz aufbauen, wenn andere Freifunk-MK Router in WLAN-Reichweite sind.</p>"
+"<p>Dein Router <em><%= pcdata(hostname) %></em> startet gerade neu und wird "
+"anschließend versuchen, sich mit anderen Freifunk-MK Routern in seiner Nähe über "
+"WLAN zu verbinden.</p>"
+
+msgid "gluon-config-mode:reboot"
+msgstr ""
+"<p>Weitere Informationen zu "
+"Freifunk-MK findest du auf "
+"<a href=\"https://freifunk-mk.de/\" target=\"_blank\">unserer "
+"Webseite</a>.</p>"
+"<p>Um zu dieser Konfigurationsseite zurückzugelangen, drücke im normalen "
+"Betrieb für ca. 10 Sekunden den Reset-Button. Das Gerät wird dann im Config "
+"Mode neustarten.</p>"
+"<p>Viel Spaß mit deinem Router und der Erkundung von Freifunk!</p>"
+
+# Leave empty to use the default text, which can be found in:
+# package/gluon-config-mode-hostname/i18n/
+msgid "gluon-config-mode:hostname-help"
+msgstr ""
+
+# Leave empty to use the default text, which can be found in:
+# package/gluon-config-mode-geo-location/i18n/
+msgid "gluon-config-mode:geo-location-help"
+msgstr ""
+
+msgid "gluon-config-mode:altitude-label"
+msgstr ""
+
+# Leave empty to use the default text, which can be found in:
+# package/gluon-config-mode-contact-info/i18n/
+msgid "gluon-config-mode:contact-help"
+msgstr ""
+
+msgid "gluon-config-mode:contact-note"
+msgstr ""
