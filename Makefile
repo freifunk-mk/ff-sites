@@ -33,15 +33,8 @@ GLUON_TARGETS ?= \
 
 GLUON_AUTOUPDATER_BRANCH := stable
 
-ifneq (,$(shell git describe --exact-match --tags 2>/dev/null))
 	GLUON_AUTOUPDATER_ENABLED := 1
-	GLUON_RELEASE := $(shell git describe --tags 2>/dev/null)
-else
-	GLUON_AUTOUPDATER_ENABLED := 0
-	EXP_FALLBACK = $(shell date '+%Y%m%d')
-	BUILD_NUMBER ?= $(EXP_FALLBACK)
-	GLUON_RELEASE := $(shell git describe --tags)~exp$(BUILD_NUMBER)
-endif
+	GLUON_RELEASE := "22.08"
 
 JOBS ?= $(shell cat /proc/cpuinfo | grep processor | wc -l)
 
