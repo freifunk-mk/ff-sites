@@ -40,7 +40,7 @@ GLUON_SITE_PACKAGES := \
 
 GLUON_MULTIDOMAIN=1
 
-DEFAULT_GLUON_RELEASE := v2021.12.6-FFMK-BETA+exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 23.11
 
 # Variables set with ?= can be overwritten from the command line
 
