@@ -28,7 +28,7 @@ GLUON_FEATURES := \
 
 GLUON_SITE_PACKAGES := \
 	iwinfo \
-	ffho-autoupdater-wifi-fallback \
+	ffac-autoupdater-wifi-fallback \
 	respondd-module-airtime 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
