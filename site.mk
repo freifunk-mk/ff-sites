@@ -15,7 +15,6 @@ GLUON_FEATURES := \
 	mesh-batman-adv-15 \
 	respondd \
 	status-page \
-    mesh-vpn-wireguard-vxlan \
 	web-advanced \
 	web-wizard 
 ## gluon airtime
@@ -31,7 +30,8 @@ GLUON_SITE_PACKAGES := \
 	ffac-autoupdater-wifi-fallback \
 	respondd-module-airtime \
 	ffac-weeklyreboot \
-	ffmuc-ipv6-ra-filter
+	ffmuc-ipv6-ra-filter \
+	fmuc-mesh-vpn-wireguard-vxlan
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
 #		gluon relies on
