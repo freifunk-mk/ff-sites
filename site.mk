@@ -30,6 +30,7 @@ GLUON_SITE_PACKAGES := \
 	iwinfo \
 	ffac-autoupdater-wifi-fallback \
 	respondd-module-airtime \
+	ffac-weeklyreboot \
 	ffmuc-ipv6-ra-filter
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
