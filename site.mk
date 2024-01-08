@@ -7,7 +7,7 @@
 
 GLUON_MULTIDOMAIN=1
 
-DEFAULT_GLUON_RELEASE := 23.11
+DEFAULT_GLUON_RELEASE := 24.01
 
 # Variables set with ?= can be overwritten from the command line
 
