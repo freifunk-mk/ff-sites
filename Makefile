@@ -29,7 +29,7 @@ GLUON_TARGETS ?= \
 	x86-generic \
 	x86-geode
 
-GLUON_AUTOUPDATER_BRANCH := stable
+GLUON_AUTOUPDATER_BRANCH := beta
 
 ifneq (,$(shell git describe --exact-match --tags 2>/dev/null))
 	GLUON_AUTOUPDATER_ENABLED := 1
