@@ -17,6 +17,5 @@ packages({
 	'ffac-autoupdater-wifi-fallback',
 	'respondd-module-airtime',
 	'ffac-weeklyreboot',
-	'ffmuc-ipv6-ra-filter',
 	'ffmuc-mesh-vpn-wireguard-vxlan',
 })
