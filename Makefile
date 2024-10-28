@@ -1,35 +1,34 @@
 GLUON_BUILD_DIR := gluon-build
 GLUON_GIT_URL := https://github.com/freifunk-gluon/gluon.git
-GLUON_GIT_REF := v2021.1.2
+GLUON_GIT_REF := v2023.2
 
 PATCH_DIR := ${GLUON_BUILD_DIR}/site/patches
 SECRET_KEY_FILE ?= ${HOME}/.gluon-secret-key
 
 GLUON_TARGETS ?= \
-	ar71xx-generic \
-	ar71xx-mikrotik \
-	ar71xx-nand \
-	ar71xx-tiny \
 	ath79-generic \
+	ath79-nand \
+	ath79-mikrotik \
 	brcm2708-bcm2708 \
 	brcm2708-bcm2709 \
-	brcm2708-bcm2710 \
 	ipq40xx-generic \
+	ipq40xx-mikrotik \
 	ipq806x-generic \
 	lantiq-xrx200 \
 	lantiq-xway \
-	mpc85xx-generic \
+	mediatek-filogic \
+	mediatek-mt7622 \
+	mpc85cc-p1010 \
 	mpc85cc-p1020 \
-	mvebu-cortexa9 \
 	ramips-mt7620 \
 	ramips-mt7621 \
 	ramips-mt76x8 \
-	ramips-rt305x \
+	realtek-rtl838x \
+	rockchip-armv8 \
 	sunxi-cortexa7 \
 	x86-64 \
 	x86-generic \
-	x86-geode \
-	x86-legacy
+	x86-geode
 
 GLUON_AUTOUPDATER_BRANCH := stable
 
@@ -45,10 +44,10 @@ endif
 
 JOBS ?= $(shell cat /proc/cpuinfo | grep processor | wc -l)
 
-GLUON_MAKE := ${MAKE} -j ${JOBS} -C ${GLUON_BUILD_DIR} \
+GLUON_MAKE := ${MAKE} -j ${JOBS} V=s -C ${GLUON_BUILD_DIR} \
 	GLUON_RELEASE=${GLUON_RELEASE} \
-	GLUON_AUTOUPDATER_BRANCH=${GLUON_AUTOUPDATER_BRANCH} \
-	GLUON_AUTOUPDATER_ENABLED=${GLUON_AUTOUPDATER_ENABLED}
+#	GLUON_AUTOUPDATER_BRANCH=${GLUON_AUTOUPDATER_BRANCH} \
+#	GLUON_AUTOUPDATER_ENABLED=${GLUON_AUTOUPDATER_ENABLED}
 
 all: info
 	${MAKE} manifest
