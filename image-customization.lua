@@ -19,3 +19,11 @@ packages({
 	'ffac-weeklyreboot',
 	'ffmuc-mesh-vpn-wireguard-vxlan',
 })
+
+-- device has no reset button and requires a special package to go into setup mode
+-- https://github.com/freifunk-gluon/community-packages/tree/master/ffda-network-setup-mode
+if device({
+	'zyxel-nwa55axe',
+}) then
+	packages {'ffda-network-setup-mode'}
+end
