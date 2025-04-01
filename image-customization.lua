@@ -28,3 +28,10 @@ if device({
 	packages {'ffda-network-setup-mode'}
 	broken(false)
 end
+
+if target('ramips', 'mt7621') or target('mediatek', 'mt7622') or target('mediatek', 'filogic') then
+	-- restart device if mt7915e driver shows known failure symptom
+	packages {
+		'ffac-mt7915-hotfix',
+	}
+end
