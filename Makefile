@@ -1,16 +1,18 @@
 GLUON_BUILD_DIR := gluon-build
 GLUON_GIT_URL := https://github.com/freifunk-gluon/gluon.git
-GLUON_GIT_REF := v2023.2
+GLUON_GIT_REF := v2023.2.5
 
 PATCH_DIR := ${GLUON_BUILD_DIR}/site/patches
 SECRET_KEY_FILE ?= ${HOME}/.gluon-secret-key
 
 GLUON_TARGETS ?= \
+	armsr-armv7 \
+	armsr-armv8 \
 	ath79-generic \
 	ath79-nand \
 	ath79-mikrotik \
-	brcm2708-bcm2708 \
-	brcm2708-bcm2709 \
+	bcm27xx-bcm2708 \
+	bcm27xx-bcm2709 \
 	ipq40xx-generic \
 	ipq40xx-mikrotik \
 	ipq806x-generic \
@@ -18,17 +20,18 @@ GLUON_TARGETS ?= \
 	lantiq-xway \
 	mediatek-filogic \
 	mediatek-mt7622 \
-	mpc85cc-p1010 \
-	mpc85cc-p1020 \
+	mpc85xx-p1010 \
+	mpc85xx-p1020 \
 	ramips-mt7620 \
 	ramips-mt7621 \
 	ramips-mt76x8 \
 	realtek-rtl838x \
 	rockchip-armv8 \
 	sunxi-cortexa7 \
-	x86-64 \
 	x86-generic \
-	x86-geode
+	x86-geode \
+	x86-legacy \
+	x86-64
 
 GLUON_AUTOUPDATER_BRANCH := stable
 
