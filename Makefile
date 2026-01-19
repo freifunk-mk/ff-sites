@@ -17,15 +17,17 @@ GLUON_TARGETS ?= \
 	ipq40xx-mikrotik \
 	ipq806x-generic \
 	lantiq-xrx200 \
+	lantiq-xrx200_legacy \
 	lantiq-xway \
 	mediatek-filogic \
 	mediatek-mt7622 \
+	mvebu-cortexa53 \
 	mpc85xx-p1010 \
 	mpc85xx-p1020 \
+	qualcommax-ipq807x \
 	ramips-mt7620 \
 	ramips-mt7621 \
 	ramips-mt76x8 \
-	realtek-rtl838x \
 	rockchip-armv8 \
 	sunxi-cortexa7 \
 	x86-generic \
