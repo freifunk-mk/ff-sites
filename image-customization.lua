@@ -35,3 +35,11 @@ if target('ramips', 'mt7621') or target('mediatek', 'mt7622') or target('mediate
 		'ffac-mt7915-hotfix',
 	}
 end
+
+if device({
+	'avm-fritz-box-7530',
+	'avm_fritzbox-7530',
+	'avm-fritzbox-7520'
+	}) then
+	disable()
+end
