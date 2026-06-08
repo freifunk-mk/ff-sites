@@ -35,16 +35,16 @@ GLUON_TARGETS ?= \
 	x86-legacy \
 	x86-64
 
-GLUON_AUTOUPDATER_BRANCH := stable
+GLUON_AUTOUPDATER_ENABLED := 1
 
 ifneq (,$(shell git describe --exact-match --tags 2>/dev/null))
-	GLUON_AUTOUPDATER_ENABLED := 1
+	GLUON_AUTOUPDATER_BRANCH := stable
 	GLUON_RELEASE := $(shell git describe --tags 2>/dev/null)
 else
-	GLUON_AUTOUPDATER_ENABLED := 0
+	GLUON_AUTOUPDATER_BRANCH := experimental
 	EXP_FALLBACK = $(shell date '+%Y%m%d')
-	BUILD_NUMBER ?= $(EXP_FALLBACK)
-	GLUON_RELEASE := $(shell git describe --tags)~exp$(BUILD_NUMBER)
+	BUILD_NUMBER ?= exp$(EXP_FALLBACK)
+	GLUON_RELEASE := $(shell git describe --tags)~$(BUILD_NUMBER)
 endif
 
 JOBS ?= $(shell cat /proc/cpuinfo | grep processor | wc -l)
