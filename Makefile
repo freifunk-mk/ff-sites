@@ -1,6 +1,6 @@
 GLUON_BUILD_DIR := gluon-build
 GLUON_GIT_URL := https://github.com/freifunk-gluon/gluon.git
-GLUON_GIT_REF := v2025.1
+GLUON_GIT_REF := v2025.1.1
 
 PATCH_DIR := ${GLUON_BUILD_DIR}/site/patches
 SECRET_KEY_FILE ?= ${HOME}/.gluon-secret-key
@@ -35,24 +35,24 @@ GLUON_TARGETS ?= \
 	x86-legacy \
 	x86-64
 
-GLUON_AUTOUPDATER_BRANCH := stable
+GLUON_AUTOUPDATER_ENABLED := 1
 
 ifneq (,$(shell git describe --exact-match --tags 2>/dev/null))
-	GLUON_AUTOUPDATER_ENABLED := 1
+	GLUON_AUTOUPDATER_BRANCH := stable
 	GLUON_RELEASE := $(shell git describe --tags 2>/dev/null)
 else
-	GLUON_AUTOUPDATER_ENABLED := 0
+	GLUON_AUTOUPDATER_BRANCH := experimental
 	EXP_FALLBACK = $(shell date '+%Y%m%d')
-	BUILD_NUMBER ?= $(EXP_FALLBACK)
-	GLUON_RELEASE := $(shell git describe --tags)~exp$(BUILD_NUMBER)
+	BUILD_NUMBER ?= exp$(EXP_FALLBACK)
+	GLUON_RELEASE := $(shell git describe --tags)~$(BUILD_NUMBER)
 endif
 
 JOBS ?= $(shell cat /proc/cpuinfo | grep processor | wc -l)
 
 GLUON_MAKE := ${MAKE} -j ${JOBS} V=s -C ${GLUON_BUILD_DIR} \
 	GLUON_RELEASE=${GLUON_RELEASE} \
-#	GLUON_AUTOUPDATER_BRANCH=${GLUON_AUTOUPDATER_BRANCH} \
-#	GLUON_AUTOUPDATER_ENABLED=${GLUON_AUTOUPDATER_ENABLED}
+	GLUON_AUTOUPDATER_BRANCH=${GLUON_AUTOUPDATER_BRANCH} \
+	GLUON_AUTOUPDATER_ENABLED=${GLUON_AUTOUPDATER_ENABLED}
 
 all: info
 	${MAKE} manifest

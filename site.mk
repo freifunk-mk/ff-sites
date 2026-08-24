@@ -11,7 +11,7 @@ GLUON_MULTIDOMAIN=1
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 26.02
+DEFAULT_GLUON_RELEASE := 26.06.1
 
 # Variables set with ?= can be overwritten from the command line
 
